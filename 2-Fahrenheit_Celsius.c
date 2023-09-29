@@ -11,6 +11,7 @@ int main ()
   upper = 300; /* upper limit */
   step = 20; /* step size */
 
+  printf("Celsius to Feharenheit Table\n");
   fahr = lower;
   while(fahr <= upper) {
     celsius = 5 * (fahr-32) / 9;
