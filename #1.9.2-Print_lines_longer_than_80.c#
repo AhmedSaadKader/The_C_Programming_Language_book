@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+#define MAXLINE 1000  /* maximum length of line */
+
+int getlines(char line[], int maxline);
+void copy(char to[], char from[]);
+
+/* print all input lines longer than 80 */
+
+int main() {
+  int len;    /* current line length */
+  int min;    /* minimum length to print */
+  char line[MAXLINE];   /*current input line */
+  char longest[MAXLINE]; /*longest line saved here */
+
+  min = 80;
+  while ((len = getlines(line, MAXLINE)) > 0)
+  
